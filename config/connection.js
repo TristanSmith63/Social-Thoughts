@@ -1,8 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/socialNetworkDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const connectionString = 'mongodb://localhost/thoughtSpace'
 
-module.exports = mongoose.connection;
+mongoose.connect(connectionString)
+
+module.exports = mongoose.connection

@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node utils/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "express": "^4.19.2",
-    "mongoose": "^8.5.1"
+    "mongoose": "^8.5.1",
+    "validator": "^13.12.0"
   }
 }
